@@ -3,17 +3,20 @@
     box-shadow: var(--shadow-sm);
     padding: var(--padding-md) var(--padding-lg);
     font-family: var(--font-family-base);
-    padding-left: 75px;
-    height: 75px;
-    display: flex;
-    justify-content: space-between;
+
     align-items: center;
+    justify-content: space-between;
+
+    padding-left: 75px;
+    height: 85px;
+    display: flex;
     position: relative;
 }
 
 .burger-menu {
     display: none;
     cursor: pointer;
+
     padding: 10px;
     z-index: 1000;
 }
@@ -168,7 +171,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .nav-bar {
         padding: var(--padding-sm);
     }
@@ -206,7 +209,7 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
     .nav-bar {
         padding: var(--padding-sm) var(--padding-md);
     }
@@ -244,15 +247,5 @@
 
     .right-side {
         margin-left: auto;
-    }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
-    .nav-bar {
-        padding-left: 50px;
-    }
-
-    .left-side {
-        gap: 50px;
     }
 }
