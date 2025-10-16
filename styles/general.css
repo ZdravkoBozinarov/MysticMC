@@ -63,6 +63,4 @@ body {
     font-family: var(--font-family-base);
     background-color: #f5f5f5;
     color: #222;
-
-    position: absolute;
 }
