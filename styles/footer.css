@@ -39,6 +39,7 @@
 }
 
 .online-count {
+    cursor: pointer;
     font-size: var(--font-size-sm);
     opacity: 0.8;
 }

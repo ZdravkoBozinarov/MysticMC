@@ -215,6 +215,11 @@
     position: relative;
 }
 
+.discord-link {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
 .label {
     border-radius: var(--border-radius-sm);
     background-color: var(--color-primary);
