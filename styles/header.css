@@ -1,6 +1,6 @@
 .header-top {
-    background-color: var(--background-primary-dark);
-    color: white;
+    background: linear-gradient(90deg, var(--color-highlight) 0%, var(--color-primary) 115%);
+    color: var(--color-text);
     position: relative;
     height: 400px;
     overflow: hidden;
@@ -20,7 +20,7 @@
 .cloud {
     position: absolute;
     background: white;
-    opacity: 0.5;
+    opacity: 0.7;
     border-radius: 50%;
     filter: blur(10px);
 }
@@ -139,7 +139,6 @@
 }
 
 .join-info {
-    background-color: var(--background-color-transparent);
     border-radius: var(--border-radius-sm);
     padding: var(--padding-xl);
 
@@ -160,25 +159,29 @@
 .logo-description h2 {
     font-size: var(--font-size-large);
     line-height: var(--line-height-base);
+    text-shadow: var(--text-shadow);
+    font-weight: var(--font-weight-extra-bold);
+
     margin-right: 40px;
 }
 
 .play-now {
     padding: var(--padding-button);
     font-size: var(--font-size-xxl);
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-extra-bold);
     border-radius: var(--border-radius-sm);
-    background-color: var(--color-accent-dark);
+    background-color: var(--color-primary);
     transition: var(--transition-fast);
+    text-shadow: var(--text-shadow);
 
     color: white;
     cursor: pointer;
-    border: none;
+    border: 1px solid var(--button-hover);
 }
 
 .play-now:hover {
     transform: scale(1.1);
-    background-color: var(--color-primary-light);
+    background-color: var(--color-dark-accent);
     color: var(--color-text);
 }
 
@@ -196,15 +199,16 @@
 
     width: 800px;
     padding-left: 100px;
-    margin-left: -100px;
+    margin-left: -150px;
 }
 
 .server-ip,
 .discord-info {
-    background-color: var(--background-color-transparent);
     border-radius: var(--border-radius-sm);
     padding: var(--padding-md) var(--padding-lg);
     gap: var(--gap-sm);
+    text-shadow: var(--text-shadow);
+    font-weight: var(--font-weight-bold);
 
     display: flex;
     align-items: center;
@@ -213,24 +217,13 @@
 
 .label {
     border-radius: var(--border-radius-sm);
-    background-color: var(--color-accent-dark);
+    background-color: var(--color-primary);
     padding: var(--padding-sm);
     font-weight: var(--font-weight-bold);
 }
 
 .copy-address {
-    color: var(--color-accent);
-}
-
-.online-server {
-    border-radius: var(--border-radius-sm);
-    font-size: var(--font-size-md);
-
-    position: absolute;
-    left: -15px;
-    top: -10px;
-    background: rgb(242, 74, 67);
-    padding: 5px 8px;
+    color: var(--color-text);
 }
 
 .discord-info i {
@@ -242,6 +235,12 @@
     background-color: var(--button-hover);
     cursor: pointer;
     transition: var(--transition-fast);
+}
+
+.discord-info:hover i {
+    transition: var(--transition-fast);
+    color: var(--color-highlight);
+    transform: rotate(20deg);
 }
 
 .discord-info:active,
@@ -290,7 +289,7 @@
 @media (min-width: 750px) and (max-width: 1280px) {
 
     .header-top {
-        height: 300px;
+        height: 350px;
     }
 
     .join-info {

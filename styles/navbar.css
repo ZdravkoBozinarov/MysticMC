@@ -56,12 +56,13 @@
 }
 
 .left-side li a {
-    text-decoration: none;
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-bold);
-    color: var(--color-accent-dark);
+    color: var(--color-text);
     transition: var(--transition-fast);
     border-radius: var(--border-radius-sm);
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .left-side {
@@ -71,7 +72,7 @@
 
 .left-side a {
     position: relative;
-    color: #eee;
+    color: var(--color-text);
     text-decoration: none;
     font-size: 18px;
     padding: 10px 0;
@@ -105,14 +106,13 @@
 }
 
 .store-btn {
-    background: var(--color-accent-dark);
+    background-color: var(--color-primary);
+    color: white;
     font-size: var(--font-size-large);
     font-weight: var(--font-weight-bold);
     padding: var(--padding-md) var(--padding-lg);
     border-radius: var(--border-radius-sm);
     gap: var(--gap-sm);
-    box-shadow: var(--shadow-sm);
-    color: black;
 
     border: none;
     display: flex;
@@ -192,7 +192,7 @@
         left: 0;
         width: 100%;
         background: var(--color-primary-light);
-        padding: 20px 0;
+        /* padding: 20px 0; */
         box-shadow: var(--shadow-sm);
         text-align: center;
     }
@@ -229,7 +229,7 @@
         top: 75px;
         left: 0;
         width: 100%;
-        background: var(--color-primary-light);
+        background: var(--color-primary);
         padding: 20px 0;
         box-shadow: var(--shadow-sm);
         text-align: center;
@@ -242,7 +242,6 @@
 
     .left-side li a {
         font-size: var(--font-size-base);
-        padding: 15px 0;
         display: block;
     }
 

@@ -1,0 +1,210 @@
+.footer {
+    background: #9747FF;
+    color: var(--color-text);
+    padding: var(--padding-xl) 0 0 0;
+    margin-top: auto;
+    width: 100%;
+}
+
+.footer-top {
+    width: min(1400px, 95%);
+    margin: 0 auto;
+    padding: 0 var(--padding-xl);
+}
+
+.server-brand {
+    gap: var(--gap-md);
+    padding-bottom: var(--padding-xl);
+
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-logo {
+    height: 70px;
+    width: auto;
+}
+
+.server-ip-footer {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-sm);
+}
+
+.server-ip-footer span:first-child {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    cursor: pointer;
+}
+
+.online-count {
+    font-size: var(--font-size-sm);
+    opacity: 0.8;
+}
+
+.social-links {
+    display: flex;
+    gap: var(--gap-md);
+    margin-left: auto;
+}
+
+.footer-ip-text {
+    color: var(--color-background);
+}
+
+.social-icon {
+    color: var(--color-text);
+    font-size: var(--font-size-xl);
+    transition: var(--transition-fast);
+}
+
+.social-icon:hover {
+    color: var(--color-highlight);
+    transform: translateY(-3px);
+}
+
+.social-links a:nth-child(1):hover {
+    transform: rotate(-10deg);
+}
+
+.social-links a:nth-child(3):hover {
+    transform: rotate(10deg);
+}
+
+.footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: var(--padding-xl);
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: var(--gap-xl);
+}
+
+.footer-section h3 {
+    color: var(--color-text);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--margin-md);
+}
+
+.footer-section p {
+    color: var(--color-text);
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-base);
+    opacity: 0.8;
+    margin-bottom: var(--margin-md);
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-sm);
+}
+
+.footer-links a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: var(--font-size-sm);
+    opacity: 0.8;
+    transition: var(--transition-fast);
+}
+
+.footer-links a:hover {
+    opacity: 1;
+    color: var(--color-highlight);
+}
+
+.visit-store-btn {
+    display: inline-block;
+    background: var(--color-highlight);
+    color: var(--color-text);
+    padding: var(--padding-sm) var(--padding-lg);
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    font-weight: var(--font-weight-bold);
+    transition: var(--transition-fast);
+}
+
+.visit-store-btn:hover {
+    background: var(--color-dark-accent);
+    transform: translateY(-2px);
+}
+
+.footer-bottom {
+    background: rgba(0, 0, 0, 0.2);
+    padding: var(--padding-lg) var(--padding-xl);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    font-size: var(--font-size-xs);
+    opacity: 0.8;
+}
+
+.copyright p {
+    margin: 0;
+}
+
+.designed-by {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: var(--font-size-xs);
+    opacity: 0.8;
+}
+
+.designed-by a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: var(--font-weight-bold);
+    transition: var(--transition-fast);
+}
+
+.designed-by a:hover {
+    color: var(--color-highlight);
+    transform: translateX(2px);
+    transform: rotate(4deg);
+}
+
+@media (max-width: 1024px) {
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--gap-lg);
+    }
+
+    .footer-section:first-child {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .server-brand {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--gap-md);
+    }
+
+    .social-links {
+        margin: 0;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: var(--gap-lg);
+        text-align: center;
+    }
+
+    .footer-links {
+        align-items: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: var(--gap-md);
+        text-align: center;
+    }
+}

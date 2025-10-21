@@ -12,97 +12,270 @@
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/footer.css">
 </head>
 
 <body>
-
-    <!-- Header Section -->
-    <section class="header-top">
-        <div class="header-clouds">
-            <div class="cloud cloud1"></div>
-            <div class="cloud cloud2"></div>
-            <div class="cloud cloud3"></div>
-            <div class="cloud cloud4"></div>
-            <div class="cloud cloud5"></div>
-            <div class="cloud cloud6"></div>
-            <div class="cloud cloud7"></div>
-            <div class="cloud cloud8"></div>
-            <div class="cloud cloud9"></div>
-            <div class="cloud cloud10"></div>
-            <div class="cloud cloud11"></div>
-            <div class="cloud cloud12"></div>
-        </div>
-
-        <div class="mobile-header">
-            <div class="logo-description">
-                <h2>Learn how to join our server<br>and start playing in 60 seconds</h2>
-                <button class="play-now">Play Now</button>
-            </div>
-        </div>
-
-        <div class="header-content">
-            <div class="logo-section">
-                <img class="header-img" src="./assets/logo.png" alt="MysticMC S4 Logo">
+    <main class="main-wrapper">
+        <!-- Header Section -->
+        <section class="header-top">
+            <div class="header-clouds">
+                <div class="cloud cloud1"></div>
+                <div class="cloud cloud2"></div>
+                <div class="cloud cloud3"></div>
+                <div class="cloud cloud4"></div>
+                <div class="cloud cloud5"></div>
+                <div class="cloud cloud6"></div>
+                <div class="cloud cloud7"></div>
+                <div class="cloud cloud8"></div>
+                <div class="cloud cloud9"></div>
+                <div class="cloud cloud10"></div>
+                <div class="cloud cloud11"></div>
+                <div class="cloud cloud12"></div>
             </div>
 
-            <div class="info-section">
-                <div class="join-info">
-                    <div class="logo-description">
-                        <h2>Learn how to join our server<br>and start playing in 60 seconds</h2>
-                        <button class="play-now">Play Now</button>
-                    </div>
-                </div>
-
-                <div class="server-info">
-                    <div class="server-ip">
-                        <span class="label">1200</span>
-                        <span class="ip-address" onclick="copyToClipboard('play.mysticmc.net')">play.mysticmc.net</span>
-                    </div>
-                    <div class="discord-info">
-                        <span class="online-server">192</span>
-                        <span class="discord-link">Join Our Discord</span>
-                        <i class="fa-brands fa-discord"></i>
-                    </div>
+            <div class="mobile-header">
+                <div class="logo-description">
+                    <h2>Learn how to join our server<br>and start playing in 60 seconds</h2>
+                    <button class="play-now">Play Now</button>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Navigation Bar -->
-    <nav class="nav-bar">
-        <div class="burger-menu">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        <ul class="left-side">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Staff</a></li>
-            <li><a href="#">Support</a></li>
-            <li><a href="#">Status</a></li>
-            <li><a href="#">Vote</a></li>
-            <li><a href="#">Applications</a></li>
-        </ul>
-        <div class="right-side">
-            <button class="store-btn" type="button">
-                <i class="fa-solid fa-cart-shopping cart-icon" aria-hidden="true"></i>
-                <span class="arrow-wrap" aria-hidden="true">
-                    <i class="fa-solid fa-arrow-right store-arrow"></i>
-                </span>
-                <span class="store-text">Store</span>
-            </button>
-        </div>
-    </nav>
+            <div class="header-content">
+                <div class="logo-section">
+                    <img class="header-img" src="./assets/logo.png" alt="MysticMC S4 Logo">
+                </div>
 
-    <section class="main-content">
-        <div class="main-content-grid">
+                <div class="info-section">
+                    <div class="join-info">
+                        <div class="logo-description">
+                            <h2>Learn how to join our server<br>and start playing in 60 seconds</h2>
+                            <button class="play-now">Play Now</button>
+                        </div>
+                    </div>
+
+                    <div class="server-info">
+                        <div class="server-ip">
+                            <span class="label">1200</span>
+                            <span class="ip-address"
+                                onclick="copyToClipboard('play.mysticmc.net')">play.mysticmc.net</span>
+                        </div>
+                        <div class="discord-info">
+                            <span class="discord-link">Join Our Discord</span>
+                            <i class="fa-brands fa-discord"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation Bar -->
+        <nav class="nav-bar">
+            <div class="burger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="left-side">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Staff</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Status</a></li>
+                <li><a href="#">Vote</a></li>
+                <li><a href="#">Applications</a></li>
+            </ul>
+            <div class="right-side">
+                <button class="store-btn" type="button">
+                    <i class="fa-solid fa-cart-shopping cart-icon" aria-hidden="true"></i>
+                    <span class="arrow-wrap" aria-hidden="true">
+                        <i class="fa-solid fa-arrow-right store-arrow"></i>
+                    </span>
+                    <span class="store-text">Store</span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Main Content Section -->
+        <section class="main-content">
             <div class="main-content-title">
-                <h2>Welcome to MysticMC S4</h2>
+                <h2>Welcome!</h2>
             </div>
-    </section>
+            <!-- First Row -->
+            <div class="content-row">
+                <div class="main-content-grid">
+                    <div class="main-content-card">
+                        <div class="card-inner-top">
+                            <h3>Survival - Release I October the 17th 2024</h3>
+                            <p><i class="fa-solid fa-user"></i>JstMental</p>
+                        </div>
 
-    <script src="js/navbar.js"></script>
-    <script src="js/main.js"></script>
+                        <div class="card-inner-main">
+                            <img src="./assets/background.jpg" alt="Survival background image">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, ut. Laboriosam quam
+                                sed,
+                                ullam vitae, eos rerum delectus aut quod obcaecati iusto unde aliquam libero dolores
+                                sequi
+                                laborum suscipit dignissimos.</p>
+                        </div>
+                    </div>
+                </div>
+                <aside class="sidebar">
+                    <div class="latest-releases">
+                        <h3>Latest Releases</h3>
+                        <div class="releases-list">
+                            <div class="release-item">
+                                <span class="release-date">OCT 21</span>
+                                <div class="release-info">
+                                    <h4>SkyBlock Season IV</h4>
+                                    <p>Major update with new islands and features</p>
+                                </div>
+                            </div>
+                            <div class="release-item">
+                                <span class="release-date">OCT 17</span>
+                                <div class="release-info">
+                                    <h4>GenPvP Release I</h4>
+                                    <p>New competitive PvP experience</p>
+                                </div>
+                            </div>
+                            <div class="release-item">
+                                <span class="release-date">OCT 14</span>
+                                <div class="release-info">
+                                    <h4>Creative Build Update</h4>
+                                    <p>Added new building competitions</p>
+                                </div>
+                            </div>
+                            <div class="release-item">
+                                <span class="release-date">OCT 10</span>
+                                <div class="release-info">
+                                    <h4>Survival Games Maps</h4>
+                                    <p>Three new arena maps released</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- Second Row (Inverted) -->
+            <div class="content-row inverted">
+                <div class="main-content-grid">
+                    <div class="main-content-card">
+                        <div class="card-inner-top">
+                            <h3>Prison - Major Update October the 19th 2024</h3>
+                            <p><i class="fa-solid fa-user"></i>JstMental</p>
+                        </div>
+
+                        <div class="card-inner-main">
+                            <img src="./assets/background.jpg" alt="Prison background image">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, ut. Laboriosam quam
+                                sed,
+                                ullam vitae, eos rerum delectus aut quod obcaecati iusto unde aliquam libero dolores
+                                sequi
+                                laborum suscipit dignissimos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <div class="latest-releases">
+                        <h3>Featured Updates</h3>
+                        <div class="releases-list">
+                            <div class="release-item">
+                                <span class="release-date">OCT 19</span>
+                                <div class="release-info">
+                                    <h4>Prison Update</h4>
+                                    <p>New mines and prestige system</p>
+                                </div>
+                            </div>
+                            <div class="release-item">
+                                <span class="release-date">OCT 16</span>
+                                <div class="release-info">
+                                    <h4>KitPvP Season III</h4>
+                                    <p>Fresh season with new kits</p>
+                                </div>
+                            </div>
+                            <div class="release-item">
+                                <span class="release-date">OCT 13</span>
+                                <div class="release-info">
+                                    <h4>SkyWars Duos</h4>
+                                    <p>Team up and dominate the skies</p>
+                                </div>
+                            </div>
+                            <div class="release-item">
+                                <span class="release-date">OCT 09</span>
+                                <div class="release-info">
+                                    <h4>Economy Rebalance</h4>
+                                    <p>Major economy updates and fixes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="server-brand">
+                    <img src="./assets/logo.png" alt="MysticMC Logo" class="footer-logo">
+                    <div class="server-ip-footer">
+                        <span>PLAY.MYSTICMC.NET</span>
+                        <span class="online-count">0 ONLINE</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fa-brands fa-discord"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ABOUT US</h3>
+                    <p>MysticMC is the best Minecraft server! Since the day MysticMC was formed, back in 2020, we have
+                        focused on bringing joy to the community. We offer many game modes, these being Survival,
+                        KitPvP,
+                        Sky Wars, Bed Wars and much more to come!
+                    </p>
+                    <p>Come play at: <span class="footer-ip-text">play.mysticmc.net</span></p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>LINKS</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Back to Top</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Staff</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Applications</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>SUPPORT US</h3>
+                    <p>Have you had a fun time here? Support us by purchasing packages such as ranks, commands, crate
+                        keys,
+                        and more!</p>
+                    <a href="#" class="visit-store-btn">Visit Store</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>Copyright © MysticMC 2025</p>
+                    <p>We are not affiliated with Mojang or Minecraft.</p>
+                </div>
+                <div class="designed-by">
+                    <span>DESIGNED BY </span><a href="https://zdravkobozinarov.github.io/PortfolioTest/"
+                        target="_blank">Zdravko
+                        Bozinarov</a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/navbar.js"></script>
+        <script src="js/main.js"></script>
 </body>
 
 </html>
