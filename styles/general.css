@@ -7,6 +7,10 @@
     --color-dark-accent: #4e56C0;
     /* Secondary buttons, hover effects and borders */
     --color-highlight: #D78FEE;
+
+    /* Toast Notification */
+    --toast-background: rgba(155, 93, 224, 0.9);
+    --toast-text: #ffffff;
     /* Cards, panels, sections with texts */
     --color-background: #FDCFFA;
     /* Text Colors */
