@@ -51,12 +51,12 @@
                     <div class="join-info">
                         <div class="logo-description">
                             <h2>Learn how to join our server<br>and start playing in 60 seconds</h2>
-                            <button class="play-now">Play Now</button>
+                            <a class="play-now" onclick="copyToClipboard('play.mysticmc.net')">Play Now</a>
                         </div>
                     </div>
 
                     <div class="server-info">
-                        <div class="server-ip">
+                        <div class="server-ip" data-tooltip="Click to copy!">
                             <span class="label">1200</span>
                             <span class="ip-address"
                                 onclick="copyToClipboard('play.mysticmc.net')">play.mysticmc.net</span>
@@ -266,7 +266,7 @@
 
             <div class="footer-bottom">
                 <div class="copyright">
-                    <p>Copyright © MysticMC 2025</p>
+                    <p>Copyright &copy; MysticMC 2025</p>
                     <p>We are not affiliated with Mojang or Minecraft.</p>
                 </div>
                 <div class="designed-by">
